@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+
+    <LinearLayout
+        android:id="@+id/touchscreen"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+        android:gravity="center"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="English Education"
+            android:textSize="45dp"
+            android:textColor="#000000"
+            android:gravity="center"
+            android:textStyle="italic"/>
+
+        <blink xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            >
+
+            <TextView
+                android:id="@+id/touch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="touch this screen"
+                android:textSize="20dp"
+                android:textStyle="italic"
+                android:textColor="#000000"
+                />
+
+        </blink>
+    </LinearLayout>
+
+    <com.fsn.cauly.CaulyAdView
+        xmlns:app="http://schemas.android.com/apk/res/tour.app.english.com.tourapp"
+        android:id="@+id/xmladview"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:appcode="CAULY"
+        app:effect="RightSlide"
+        app:dynamicReloadInterval="true"
+        app:reloadInterval="20"
+        app:bannerHeight="Fixed"
+        />
+
+</RelativeLayout>
+
+
+
+
+
+
+
+
+

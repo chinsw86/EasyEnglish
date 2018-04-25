@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+//상단버튼
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <Button
+            android:id="@+id/airport"
+            android:text="공  항"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+        <Button
+            android:id="@+id/hotel"
+            android:text="숙  소"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+        <Button
+            android:id="@+id/restaurant"
+            android:text="식  당"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+    //문제레이아웃
+<LinearLayout
+    android:id="@+id/layout_fragment"
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="8"
+    android:orientation="vertical"
+    >
+    //문제들어가는 레이아웃
+    <LinearLayout
+        android:id="@+id/layout_infragment"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="8"
+        android:orientation="vertical"
+        >
+
+        //이미지 들어가는 곳
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2">
+        </LinearLayout>
+        //중간 카운터 및 텍스트
+        <LinearLayout
+            android:background="#d3d3d3"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:textSize="20dp"
+                />
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:max="20"
+                android:minWidth="400dp">
+
+            </ProgressBar>
+            <TextView
+                android:id="@+id/inputtext"
+                android:text=""
+                android:textColor="#000000"
+                android:textSize="20dp"
+                android:layout_marginHorizontal="25dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </TextView>
+        </LinearLayout>
+        //버튼 뿌려지는 곳
+        <LinearLayout
+            android:id="@+id/buttonlayout"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:orientation="vertical"
+            >
+
+            <LinearLayout
+                android:id="@+id/qbuttonLayout1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                >
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/qbuttonLayout2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                >
+
+            </LinearLayout>
+
+        </LinearLayout>
+        //정답확인
+        <Button
+            android:id="@+id/checkButton"
+            android:text="정답확인"
+            android:layout_width="match_parent"
+            android:layout_height="50dp" />
+        //정답확인 레이아웃
+        <LinearLayout
+            android:id="@+id/check_layout"
+            android:background="#757575"
+            android:layout_width="match_parent"
+            android:layout_height="100dp">
+            <TextView
+                android:id="@+id/oxtext"
+                android:textStyle="bold"
+                android:textColor="#ffffff"
+                android:textSize="20dp"
+                android:text="정답입니다."
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <Button
+                android:id="@+id/quastion_list_button"
+                android:text="다른 문제"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <Button
+                android:id="@+id/quastion_retry_button"
+                android:text="다시 풀기"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
+</LinearLayout>
