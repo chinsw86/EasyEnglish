@@ -27,6 +27,8 @@ public class QuestionActivity extends AppCompatActivity {
     int click = 0;
     TextView textview, OxText;
 
+    //test1 test2
+
     String answer1 = "I'd like to book a flight to New York.";
     String answer2 = "wdasdasd";
 
